@@ -1,50 +1,99 @@
 <!DOCTYPE html>
-     <html lang="pt-BR">
-     <head>
-         <meta charset="UTF-8">
-         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-         <title>Portal PRM 03/004 - Santiago/RS</title>
-         <script src="https://cdn.tailwindcss.com"></script>
-         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
-         <style>
-            body { font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%); }
-            .glass { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.1); }
-        </style>
-    </head>
-    <body class="min-h-screen flex items-center justify-center p-6 text-white text-center">
-        <div class="max-w-2xl w-full">
-            <div class="mb-12">
-                <h1 class="text-5xl font-black tracking-tighter mb-2">PRM 03/004</h1>
-                <p class="text-blue-400 font-bold uppercase tracking-widest text-sm">Posto de Recrutamento e Mobilização • Santiago - RS</p>
-            </div>
-            
-            <div class="glass p-12 rounded-3xl shadow-2xl mb-12 transform hover:scale-[1.02] transition-all">
-                <h2 class="text-2xl font-bold mb-6">Portal de Gestão Centralizada</h2>
-                <p class="text-gray-400 mb-10 leading-relaxed">Acesse a plataforma para lançamentos de arrecadação, envio de relatórios mensais e gestão de
-      mapas.</p>
-                
-                <a href="https://script.google.com/macros/s/AKfycbzLfydEBLE5T73Qa1QXcVuSbDmtioph4E-1F4lOQg0uSQmMXK5pNbABU2j4CvROAfQu/exec" class="inline-block w-full bg-blue-600 hover:bg-blue-500 text-white font-black py-5 rounded-2xl
-      shadow-xl transition-all active:scale-95 text-lg">
-                    ACESSAR O SISTEMA
-                </a>
-                
-                <div class="mt-8 flex justify-center gap-6 text-xs font-bold text-gray-500 uppercase tracking-widest">
-                    <span>Versão 4.0</span>
-                    <span>•</span>
-                    <span>Ambiente Seguro</span>
-                </div>
-            </div>
-   
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div class="glass p-6 rounded-2xl text-left">
-                    <h4 class="font-bold text-blue-400 mb-2">Suporte Técnico</h4>
-                    <p class="text-xs text-gray-500">Dúvidas sobre o sistema ou acesso? Entre em contato com a Seção de Auditoria.</p>
-                </div>
-                <div class="glass p-6 rounded-2xl text-left">
-                    <h4 class="font-bold text-emerald-400 mb-2">Documentação</h4>
-                    <p class="text-xs text-gray-500">Manuais e vídeos explicativos disponíveis na central de downloads.</p>
-                </div>
-            </div>
-        </div>
-    </body>
-    </html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PRM 03/004 - Santiago/RS | Sistema Web PRM</title>
+<style>
+  :root{--az:#1e3a8a;--az2:#2563eb;--vd:#065f46;--cz:#f1f5f9;--tx:#0f172a;--mu:#64748b}
+  *{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,Arial,sans-serif;color:var(--tx);background:#fff}
+  a{color:inherit}
+  header{background:linear-gradient(135deg,#0f172a,#1e3a8a);color:#fff;padding:18px 28px;display:flex;align-items:center;gap:14px}
+  header .sig{font-weight:900;font-size:20px;letter-spacing:-.5px}header nav{margin-left:auto;display:flex;gap:18px;font-size:13px;font-weight:600;opacity:.9}
+  .hero{background:linear-gradient(135deg,#0f172a,#1e3a8a 60%,#2563eb);color:#fff;padding:56px 28px 64px;text-align:center}
+  .hero h1{font-size:40px;margin:0 0 6px;font-weight:900;letter-spacing:-1px}.hero p{margin:0 auto 26px;max-width:640px;opacity:.85;line-height:1.5}
+  .btn{display:inline-block;background:#fff;color:var(--az);font-weight:900;padding:16px 34px;border-radius:14px;text-decoration:none;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+  .btn2{display:inline-block;margin-left:10px;border:1px solid rgba(255,255,255,.5);color:#fff;font-weight:700;padding:15px 24px;border-radius:14px;text-decoration:none}
+  .num{display:flex;justify-content:center;gap:34px;margin-top:34px;font-size:13px;opacity:.9}.num b{display:block;font-size:26px}
+  section{padding:46px 28px;max-width:1100px;margin:0 auto}section h2{font-size:24px;margin:0 0 6px}section .sub{color:var(--mu);margin:0 0 22px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+  .card{border:1px solid #e2e8f0;border-radius:16px;padding:20px;background:#fff}.card h3{margin:0 0 6px;font-size:16px}.card p{margin:0;color:var(--mu);font-size:13px;line-height:1.5}
+  .ic{font-size:26px;margin-bottom:8px}.tag{display:inline-block;font-size:10px;font-weight:800;text-transform:uppercase;padding:2px 8px;border-radius:99px;background:#fef3c7;color:#92400e;margin-left:6px;vertical-align:middle}
+  .faixa{background:var(--cz)}
+  .linha{display:flex;gap:0;overflow-x:auto;padding:10px 0}.passo{flex:1;min-width:150px;text-align:center;position:relative;padding:0 8px}
+  .passo .b{width:46px;height:46px;border-radius:50%;background:var(--az2);color:#fff;font-weight:900;display:flex;align-items:center;justify-content:center;margin:0 auto 8px;position:relative;z-index:1}
+  .passo:not(:last-child)::after{content:"";position:absolute;top:23px;left:50%;width:100%;height:3px;background:#bfdbfe}
+  .passo h4{margin:0 0 4px;font-size:13px}.passo p{margin:0;font-size:11px;color:var(--mu)}
+  details{border:1px solid #e2e8f0;border-radius:12px;padding:12px 16px;margin-bottom:8px;background:#fff}summary{font-weight:700;cursor:pointer}details p{color:var(--mu);font-size:14px;margin:8px 0 0}
+  .lei{display:flex;justify-content:space-between;gap:10px;border-bottom:1px solid #e2e8f0;padding:10px 0;font-size:14px}.lei span{color:var(--mu);font-size:12px}
+  footer{background:#0f172a;color:#cbd5e1;padding:26px 28px;font-size:12px;text-align:center}
+  .mock{position:fixed;bottom:10px;right:10px;background:#dc2626;color:#fff;font-weight:800;font-size:11px;padding:6px 10px;border-radius:8px}
+</style>
+</head>
+<body>
+<header><div class="sig">PRM 03/004</div><div style="font-size:12px;opacity:.8">Posto de Recrutamento e Mobilização · Santiago-RS</div>
+  <nav><a href="#sistema">Sistema Web</a><a href="#alistamento">Alistamento</a><a href="#suporte">Suporte</a><a href="#documentos">Documentos</a><a href="#legislacao">Legislação</a></nav></header>
+
+<div class="hero">
+  <h1>Sistema Web PRM 03/004</h1>
+  <p>Plataforma das Juntas de Serviço Militar da área do PRM 03/004: lançamento de taxas e multas, relatórios de alistamento (8129), geração e assinatura digital dos mapas mensais e processos especiais.</p>
+  <a class="btn" href="https://script.google.com/macros/s/AKfycbzLfydEBLE5T73Qa1QXcVuSbDmtioph4E-1F4lOQg0uSQmMXK5pNbABU2j4CvROAfQu/exec">ACESSAR O SISTEMA</a><a class="btn2" href="https://script.google.com/macros/s/AKfycbzLfydEBLE5T73Qa1QXcVuSbDmtioph4E-1F4lOQg0uSQmMXK5pNbABU2j4CvROAfQu/exec?manual=secretario" target="_blank">📘 Manual do Secretário</a>
+  <div class="num"><div><b>3ª RM</b>Região Militar</div><div><b>PRM 03/004</b>Santiago-RS</div><div><b>3</b>Delegacias de Serviço Militar<br><small>2ª, 4ª e 5ª</small></div><div><b>73</b>Juntas de Serviço Militar</div></div>
+</div>
+
+<section id="sistema">
+  <h2>O que o Sistema Web faz</h2><p class="sub">Tudo o que a JSM envia ao PRM, num só lugar e sem papel.</p>
+  <div class="grid">
+    <div class="card"><div class="ic">💰</div><h3>Arrecadação</h3><p>Lançamento de taxas e multas com o amparo legal sugerido e conferência automática pelos auditores do PRM.</p></div>
+    <div class="card"><div class="ic">📋</div><h3>Alistamento mensal (8129)</h3><p>Envio do relatório do SERMIL em Excel; conferência dos alistados por classe.</p></div>
+    <div class="card"><div class="ic">🗺️</div><h3>Mapas mensais</h3><p>Mapas de arrecadação e de situação gerados pelo sistema e assinados digitalmente, com QR Code de verificação.</p></div>
+    <div class="card"><div class="ic">📂</div><h3>Processos especiais</h3><p>Abertura e acompanhamento de processos (incapacidade, arrimo, etc.) com o PRM.</p></div>
+  </div>
+</section>
+
+<div class="faixa"><section id="alistamento">
+  <h2>Alistamento militar — etapas </h2><p class="sub">Para o cidadão e para o secretário: do alistamento ao certificado.</p>
+  <div class="linha">
+    <div class="passo"><div class="b">1</div><h4>Alistamento</h4><p>1º de janeiro a 30 de junho do ano em que completa 18 anos (online ou na JSM)</p></div>
+    <div class="passo"><div class="b">2</div><h4>Seleção geral</h4><p>Comparecimento à Comissão de Seleção na data marcada</p></div>
+    <div class="passo"><div class="b">3</div><h4>Designação</h4><p>Apto para incorporação ou excesso de contingente</p></div>
+    <div class="passo"><div class="b">4</div><h4>Incorporação ou dispensa</h4><p>Serviço militar inicial ou dispensa de incorporação</p></div>
+    <div class="passo"><div class="b">5</div><h4>Certificado</h4><p>CR, CDI ou CI — juramento à Bandeira na JSM</p></div>
+  </div>
+  
+</section></div>
+
+<section id="suporte">
+  <h2>Suporte técnico</h2><p class="sub">Perguntas frequentes, vídeos curtos e contato.</p>
+  <div class="grid" style="margin-bottom:18px">
+    <div class="card"><div class="ic">🎬</div><h3>Vídeos tutoriais</h3><p>Em breve: como lançar uma GRU, enviar o 8129, assinar os mapas e abrir um processo.</p></div>
+    <div class="card"><div class="ic">📘</div><h3>Manual do Secretário</h3><p>Passo a passo com imagens de todas as telas, sempre atualizado com a versão do sistema.</p></div>
+    <div class="card"><div class="ic">✉️</div><h3>Fale com o PRM</h3><p>Em breve: e-mail de suporte e telefone do PRM (horário de expediente).</p></div>
+  </div>
+  <details><summary>Esqueci minha senha. O que faço?</summary><p>Em breve.</p></details>
+  <details><summary>O lançamento ficou "Pendente". O que significa?</summary><p>Em breve.</p></details>
+  <details><summary>Até quando devo assinar os mapas do mês?</summary><p>Em breve.</p></details>
+  <details><summary>Como envio o relatório 8129 em Excel?</summary><p>Em breve.</p></details>
+</section>
+
+<div class="faixa"><section id="documentos">
+  <h2>Documentos e modelos</h2><p class="sub">Modelos em branco para download (DOCX/PDF). Nenhum documento com dados pessoais.</p>
+  <div class="grid">
+    <div class="card"><div class="ic">📄</div><h3>Notoriamente incapaz</h3><p>Em breve: Requerimento e roteiro de instrução do processo.</p></div>
+    <div class="card"><div class="ic">📄</div><h3>Arrimo de família</h3><p>Em breve: Requerimento, declaração e documentos exigidos.</p></div>
+    <div class="card"><div class="ic">📄</div><h3>SASMO</h3><p>Em breve: Modelo e orientações.</p></div>
+    <div class="card"><div class="ic">📄</div><h3>Outros modelos</h3><p>Em breve: Ofícios, declarações e formulários usados pelas JSM.</p></div>
+  </div>
+</section></div>
+
+<section id="legislacao">
+  <h2>Legislação do Serviço Militar</h2><p class="sub">Links para o texto oficial (Planalto).</p>
+  <div class="lei"><a href="https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm" target="_blank"><b>Constituição Federal, art. 143</b></a><span>obrigatoriedade do serviço militar</span></div>
+  <div class="lei"><a href="https://www.planalto.gov.br/ccivil_03/leis/l4375.htm" target="_blank"><b>Lei nº 4.375/1964 — Lei do Serviço Militar (LSM)</b></a><span>planalto.gov.br</span></div>
+  <div class="lei"><a href="https://www.planalto.gov.br/ccivil_03/decreto/d57654.htm" target="_blank"><b>Decreto nº 57.654/1966 — Regulamento da LSM (RLSM)</b></a><span>planalto.gov.br</span></div>
+  <div class="lei"><a href="https://www.planalto.gov.br/ccivil_03/leis/l5292.htm" target="_blank"><b>Lei nº 5.292/1967 — Serviço Militar de MFDV</b></a><span>planalto.gov.br</span></div>
+  <div class="lei"><a href="https://www.planalto.gov.br/ccivil_03/leis/l8239.htm" target="_blank"><b>Lei nº 8.239/1991 e Decreto nº 1.294/1994 — Prestação de Serviço Alternativo</b></a><span>planalto.gov.br</span></div>
+</section>
+
+<footer>PRM 03/004 · Santiago-RS · 3ª Região Militar — Sistema Web PRM (SWP) · Página informativa; o acesso ao sistema exige login.</footer>
+
+</body></html>
