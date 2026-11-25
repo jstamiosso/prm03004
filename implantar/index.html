@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Sistema Web PRM — SWP</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin:0; font-family:'Segoe UI',Arial,sans-serif; background:#0b1a2b; color:#eaf1f8; }
+  .hero { padding:64px 8vw 56px; background:linear-gradient(135deg,#0b1a2b 0%,#12304d 60%,#1b4a73 100%); text-align:center; position:relative; overflow:hidden; }
+  .hero::before { content:""; position:absolute; top:-60px; right:-60px; width:320px; height:320px; background:radial-gradient(circle,rgba(90,180,255,.25),transparent 70%); }
+  .tag { display:inline-block; background:#1b4a73; color:#9fd1ff; padding:6px 16px; border-radius:20px; font-size:13px; letter-spacing:.5px; margin-bottom:18px; border:1px solid #2d6796; }
+  h1 { font-size:2.6rem; margin:0 0 14px; font-weight:800; letter-spacing:-.5px; }
+  h1 span { color:#5ab4ff; }
+  .sub { font-size:1.15rem; color:#b9d3ea; max-width:640px; margin:0 auto 32px; line-height:1.5; }
+  .cta { display:inline-block; background:#2e86ff; color:#fff; padding:15px 34px; border-radius:10px; font-weight:700; font-size:1.05rem; text-decoration:none; box-shadow:0 8px 24px rgba(46,134,255,.4); transition:transform .15s; }
+  .cta:hover { transform:translateY(-2px); }
+  .cta.secundario { background:transparent; border:1.5px solid #3a6f9c; color:#cfe6fb; margin-left:14px; box-shadow:none; }
+  section { padding:64px 8vw; }
+  .faixa { background:#0e2238; }
+  h2 { font-size:1.9rem; text-align:center; margin-bottom:10px; }
+  .lead { text-align:center; color:#9fb6cc; max-width:680px; margin:0 auto 46px; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:22px; }
+  .card { background:#102a44; border:1px solid #1d3f61; border-radius:14px; padding:26px 22px; transition:border-color .2s, transform .2s; }
+  .card:hover { border-color:#2e86ff; transform:translateY(-3px); }
+  .card .ico { font-size:1.9rem; margin-bottom:12px; }
+  .card h3 { margin:0 0 8px; font-size:1.08rem; color:#eaf1f8; }
+  .card p { margin:0; color:#9fb6cc; font-size:.93rem; line-height:1.5; }
+  .destaque { background:linear-gradient(120deg,#0e2238,#163654); border:1px solid #2e86ff55; border-radius:18px; padding:40px 34px; display:grid; grid-template-columns:1.1fr 1fr; gap:36px; align-items:center; }
+  .destaque h3 { font-size:1.5rem; margin:0 0 14px; }
+  .destaque ul { padding-left:20px; color:#cfe6fb; line-height:1.9; margin:0; }
+  .mock { background:#0b1a2b; border:1px solid #244a6d; border-radius:12px; padding:18px; font-size:.82rem; color:#9fb6cc; }
+  .mock .barra { display:flex; gap:6px; margin-bottom:14px; }
+  .mock .barra span { width:10px; height:10px; border-radius:50%; background:#2e86ff; opacity:.5; }
+  .mock .linha { display:flex; justify-content:space-between; padding:8px 0; border-bottom:1px solid #1d3f61; }
+  .assinado { color:#5ddb8a; font-weight:600; }
+  .passos { display:flex; gap:0; counter-reset:passo; flex-wrap:wrap; justify-content:center; }
+  .passo { flex:1; min-width:220px; text-align:center; padding:0 18px; position:relative; }
+  .passo .num { width:46px; height:46px; border-radius:50%; background:#2e86ff; color:#fff; font-weight:800; display:flex; align-items:center; justify-content:center; margin:0 auto 14px; font-size:1.1rem; }
+  .passo h4 { margin:0 0 8px; font-size:1rem; }
+  .passo p { color:#9fb6cc; font-size:.88rem; margin:0; }
+  .footer-cta { text-align:center; background:linear-gradient(135deg,#12304d,#1b4a73); border-radius:20px; padding:50px 10vw; }
+  .footer-cta h2 { margin-bottom:12px; }
+  footer { text-align:center; padding:28px; color:#5e7a94; font-size:.85rem; }
+  .selo { display:flex; gap:10px; justify-content:center; flex-wrap:wrap; margin-top:18px; }
+  .selo span { background:#102a44; border:1px solid #1d3f61; border-radius:20px; padding:6px 14px; font-size:.8rem; color:#9fd1ff; }
+</style>
+</head>
+<body>
+
+  <div class="hero">
+    <span class="tag">⚔️ Exército Brasileiro · Serviço Militar</span>
+    <h1>Sistema Web <span>PRM</span><br>Gestão completa da sua Junta, do lançamento à assinatura.</h1>
+    <p class="sub">O SWP transforma o controle de arrecadação, situação e pagamento das JSMs
+    num sistema único, auditável e sem papel — pronto pra operar no seu PRM em poucos minutos.</p>
+    <a class="cta" href="#comecar">🚀 Quero implantar no meu PRM</a>
+    <a class="cta secundario" href="#funcionalidades">Ver funcionalidades</a>
+  </div>
+
+  <section id="funcionalidades">
+    <h2>Tudo que o seu PRM precisa, num só lugar</h2>
+    <p class="lead">Criado e testado na operação real do PRM 03/004 — não é um protótipo, é o sistema que já rodou mapas, auditorias e pagamentos de verdade.</p>
+    <div class="grid">
+      <div class="card"><div class="ico">📊</div><h3>Mapas de Arrecadação e Situação</h3><p>Gerados automaticamente todo mês, com os dados já auditados — sem montar planilha na mão.</p></div>
+      <div class="card"><div class="ico">✍️</div><h3>Assinatura digital pelo secretário</h3><p>O próprio secretário da JSM assina o mapa dentro do sistema — com link de verificação público, sem precisar imprimir nem escanear.</p></div>
+      <div class="card"><div class="ico">✅</div><h3>Auditoria e Deferimento</h3><p>Fluxo completo: lançamento → auditoria → deferimento, com histórico e log de quem fez o quê.</p></div>
+      <div class="card"><div class="ico">💰</div><h3>Diárias, Gratificações e Etapa</h3><p>Cálculo automático por posto/graduação, com histórico de vigência de valores.</p></div>
+      <div class="card"><div class="ico">🗂️</div><h3>Cadastro de Secretários e Prefeitos</h3><p>Fichas, documentos assinados, fotos e termos de posse organizados por JSM.</p></div>
+      <div class="card"><div class="ico">🔒</div><h3>Segurança e backup</h3><p>Backup automático da planilha, controle de acesso por perfil, sem senha fixa de instalação.</p></div>
+    </div>
+  </section>
+
+  <section class="faixa">
+    <div class="destaque">
+      <div>
+        <h3>📄 O mapa que antes levava horas, agora é automático — e assinado digitalmente</h3>
+        <ul>
+          <li>Sistema monta o Mapa de Arrecadação e o de Situação com os dados já lançados e auditados no mês.</li>
+          <li>O secretário da JSM abre, confere e <strong>assina direto no sistema</strong> — sem imprimir, sem escanear.</li>
+          <li>Qualquer um pode verificar a autenticidade da assinatura por um link público.</li>
+          <li>O Delegado Chefe recebe tudo já pronto pra consolidar e enviar à Região Militar.</li>
+        </ul>
+      </div>
+      <div class="mock">
+        <div class="barra"><span></span><span></span><span></span></div>
+        <strong>Mapa de Arrecadação — Novembro/2026</strong>
+        <div class="linha"><span>JSM 014 — Cidade Modelo</span><span class="assinado">✔ Assinado</span></div>
+        <div class="linha"><span>JSM 027 — Vila Serena</span><span class="assinado">✔ Assinado</span></div>
+        <div class="linha"><span>JSM 041 — Porto Alegre do Sul</span><span style="color:#e0b84a">Aguardando assinatura</span></div>
+        <div class="linha" style="border-bottom:none"><span>JSM 058 — Novo Horizonte</span><span class="assinado">✔ Assinado</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="comecar">
+    <h2>Em 3 passos, seu PRM está no ar</h2>
+    <p class="lead">Sem instalar nada, sem servidor, sem custo de licença — tudo roda no Google Drive do seu próprio PRM.</p>
+    <div class="passos">
+      <div class="passo"><div class="num">1</div><h4>Faça sua cópia</h4><p>Um clique copia a planilha e o sistema inteiro pra sua própria conta Google — você é o dono, do início.</p></div>
+      <div class="passo"><div class="num">2</div><h4>Responda o Assistente</h4><p>Um formulário guiado pede o nome do seu PRM, cidade, Delegado Chefe e a lista de JSMs — leva poucos minutos.</p></div>
+      <div class="passo"><div class="num">3</div><h4>Comece a operar</h4><p>O link do seu sistema já está pronto — faça o primeiro login e comece a lançar as arrecadações do mês.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="footer-cta">
+      <h2>Seu PRM merece sair do papel.</h2>
+      <p class="sub" style="color:#dbe9f7">Fale com o PRM 03/004 pra receber o acesso autorizado e começar sua implantação.</p>
+      <a class="cta" href="mailto:prm03004@gmail.com">📩 Solicitar acesso</a>
+      <div class="selo">
+        <span>Já em uso real no PRM 03/004</span>
+        <span>Sem custo de licença</span>
+        <span>Seus dados, sua conta Google</span>
+      </div>
+    </div>
+  </section>
+
+  <footer>Sistema Web PRM (SWP) — desenvolvido e mantido pelo PRM 03/004 (3ª Região Militar). Página de apresentação — v1 (rascunho).</footer>
+
+</body>
+</html>
